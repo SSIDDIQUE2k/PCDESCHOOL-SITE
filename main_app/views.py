@@ -1,13 +1,12 @@
-# main_app/views.py
-
 from django.shortcuts import render
-# Import HttpResponse to send text-based responses
-from django.http import HttpResponse
 
 # Define the home view function
 def home(request):
     # Send a simple HTML response
-    return HttpResponse('<h1>People\'s DayCare And Elementary School</h1>')
+    return render(request, 'home.html')
 
 def about(request):
     return render(request, 'about.html')
+
+def teacher_index(request):
+    return render(request, 'teacher/index.html')

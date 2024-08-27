@@ -1,31 +1,45 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="" />
-    <title>Cat Collector</title>
+
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
     {% block head %} 
+
     {% endblock %}
   </head>
   <body>
     <header>
-      <div class="header-logo-container">
-        <a href="/">
-          <img src="" alt="The Cat Collector Logo" />
-        </a>
-      </div>
       <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
+        <div class="logo">
+          <img src="{% static 'images/Blue_and_White_Circle_Surfing_Club_Logo-removebg-preview.png' %}" alt="Logo">
+          <h3>People's DayCare And Elementry School</h3>
+
+        </div>
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li> <li>
+            <a href="{% url 'educators' %}">Educators</a></li>
+        {% comment %} <li><a href="{% url 'services' %}">Services</a></li> {% endcomment %}
+         
+          {% comment %} <li><a href="{% url 'teachers-create' %}">Add-Teacher</a></li>   {% endcomment %}
         </ul>
       </nav>
     </header>
     <main>
-     {% block content %} 
-     {% endblock %}
-     </main>
+      {% block content %} 
+      {% endblock %}
+    </main>
+    <script src="{% static 'javascript/navigation.js' %}"></script>
   </body>
 </html>
