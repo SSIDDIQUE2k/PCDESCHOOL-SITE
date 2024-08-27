@@ -1,5 +1,5 @@
-from django.shortcuts import render,redirect
-
+from django.shortcuts import render
+from .models import Teacher
 
 
 # Define the home view function
@@ -11,4 +11,5 @@ def about(request):
     return render(request, 'about.html')
 
 def teacher_index(request):
+    teachers = Teacher.objects.all()  # look familiar?
     return render(request, 'teachers/index.html', {'teachers': teachers})
