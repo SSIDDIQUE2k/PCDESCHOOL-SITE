@@ -28,8 +28,11 @@
 
         <ul class="nav-links">
           <li><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="/teachers">Our Staff</a></li>
-          <li><a href="/about">About</a></li>
+          <li><a href="{% url 'teacher-index' %}">Our Staff</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+
+
         {% comment %} <li><a href="{% url 'services' %}">Services</a></li> {% endcomment %}
          
           {% comment %} <li><a href="{% url 'teachers-create' %}">Add-Teacher</a></li>   {% endcomment %}
@@ -40,6 +43,39 @@
       {% block content %} 
       {% endblock %}
     </main>
+    
     <script src="{% static 'javascript/navigation.js' %}"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

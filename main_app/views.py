@@ -10,6 +10,9 @@ def home(request):
 def about(request):
     return render(request, 'about.html')
 
+def contact(request):
+    return render(request, 'contact.html')
+
 def teacher_index(request):
     teachers = Teacher.objects.all()  # look familiar?
     return render(request, 'teachers/index.html', {'teachers': teachers})

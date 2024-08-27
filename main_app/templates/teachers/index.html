@@ -12,7 +12,7 @@
 <section class="card-container">
   {% for teacher in teachers %}
     <div class="card">
-      <a href ="/teachers/{{teacher.id}}">
+      <a href="{% url 'teacher-detail' teacher.id %}">
       <div class="card-content">
         <div class="card-img-container">
           <img
