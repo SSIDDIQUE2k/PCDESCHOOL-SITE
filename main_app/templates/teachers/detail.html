@@ -16,6 +16,11 @@
       <p>A {{ teacher.subject }} teacher.</p>
     {% endif %}
     <p><small>{{ teacher.description }}</small></p>
+
+    <div class="cat-actions">
+      <a href="{% url 'teacher-update' teacher.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'teacher-delete' teacher.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 {% endblock %}
