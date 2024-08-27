@@ -13,3 +13,7 @@ def about(request):
 def teacher_index(request):
     teachers = Teacher.objects.all()  # look familiar?
     return render(request, 'teachers/index.html', {'teachers': teachers})
+
+def teacher_detail(request, teacher_id):
+    teacher = Teacher.objects.get(id=teacher_id)
+    return render(request, 'teachers/detail.html', {'teacher': teacher})

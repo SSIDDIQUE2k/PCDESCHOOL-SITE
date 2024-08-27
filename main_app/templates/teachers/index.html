@@ -12,6 +12,7 @@
 <section class="card-container">
   {% for teacher in teachers %}
     <div class="card">
+      <a href ="/teachers/{{teacher.id}}">
       <div class="card-content">
         <div class="card-img-container">
           <img
@@ -23,10 +24,11 @@
         {% if teacher.age > 0 %}
         <p>A {{ teacher.age }} year old {{ teacher.breed }}</p>
         {% else %}
-        <p>A {{ teacher.breed }} kitten.</p>
+        <p>A {{ teacher.subject }} teacher.</p>
         {% endif %}
         <p><small>{{ teacher.description }}</small></p>
       </div>
+    </a>
     </div>
   {% endfor %}
 </section>
