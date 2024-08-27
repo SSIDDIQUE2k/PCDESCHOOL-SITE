@@ -1,6 +1,11 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.views import LoginView
 from .models import Teacher  # Import the Teacher model
+
+class Login(LoginView):
+    template_name = 'login.html'
+
 
 
 class TeacherCreate(CreateView):
@@ -14,7 +19,8 @@ class TeacherUpdate(UpdateView):
 
 class TeacherDelete(DeleteView):
     model = Teacher
-    success_url = '/cats/'
+    success_url = '/teachers/'
+
 
 
 # Define the home view function
@@ -36,7 +42,7 @@ def teacher_detail(request, teacher_id):
     teacher = Teacher.objects.get(id=teacher_id)
     return render(request, 'teachers/detail.html', {'teacher': teacher})
 
-# Define the TeacherUpdate view
+
 
 
 

@@ -17,7 +17,7 @@
       <nav>
         <div class="logo">
           <img src="{% static 'images/Blue_and_White_Circle_Surfing_Club_Logo-removebg-preview.png' %}" alt="Logo">
-          <h3>People's DayCare And Elementry School</h3>
+          <h3>People's DayCare And Elementary School</h3>
 
         </div>
         <div class="menu-toggle">
@@ -25,17 +25,32 @@
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
-
+        {% if user.is_authenticated %}
+        the user is logged in
+        {% else %}
+        the user is not logged in
+        {% endif %}
         <ul class="nav-links">
-          <li><a href="{% url 'home' %}">Home</a></li>  
+          <li><a href="{% url 'home' %}">Home</a></li>
+        
           <li class="dropdown">
             <a href="{% url 'teacher-index' %}">Our Staff ▾</a>
             <ul class="dropdown-content">
+              {% if user.is_authenticated %}  
               <li><a href="{% url 'teacher-create' %}">Add Staff</a></li>
+              {% endif %}
             </ul>
           </li>
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
+          {% if user.is_authenticated %}
+          <li>
+            <form id="logout-form" method="post" action="{% url 'admin:logout' %}">
+              {% csrf_token %}
+              <button type="submit">Log out</button>
+            </form>
+          </li>
+          {% endif %}
         </ul>
       </nav>
     </header>
