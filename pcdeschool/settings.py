@@ -119,9 +119,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+# Add this variable to specify where decorators and mixins should redirect to
+LOGIN_URL = 'sign-in'
+
 LOGIN_REDIRECT_URL = 'teacher-index'
 
+LOGOUT_REDIRECT_URL = 'home'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 

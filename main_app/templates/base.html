@@ -8,9 +8,6 @@
 
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
-    {% block head %} 
-
-    {% endblock %}
   </head>
   <body>
     <header>
@@ -50,6 +47,8 @@
               <button type="submit">Log out</button>
             </form>
           </li>
+          {% else %}
+          <li><a href="{% url 'sign-in' %}">Log in</a></li>
           {% endif %}
         </ul>
       </nav>

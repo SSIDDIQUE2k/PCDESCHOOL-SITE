@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
+
 from .models import Teacher  # Import the Teacher model
 
 class Login(LoginView):
@@ -8,7 +11,7 @@ class Login(LoginView):
 
 
 
-class TeacherCreate(CreateView):
+class TeacherCreate(LoginRequiredMixin,CreateView):
     model = Teacher
     fields = '__all__'
 
@@ -34,9 +37,11 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
 
+
 def teacher_index(request):
     teachers = Teacher.objects.all()  # look familiar?
     return render(request, 'teachers/index.html', {'teachers': teachers})
+
 
 def teacher_detail(request, teacher_id):
     teacher = Teacher.objects.get(id=teacher_id)
