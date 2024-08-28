@@ -14,6 +14,7 @@ This a client website*School Website*, is a web application designed to help the
 [Simple Dropdown Menu Using HTML & CSS](https://www.youtube.com/watch?v=dmFC1e_CUAQ)
 - [Responsive Navbar in React using React Rou<img src="./public/images/notebookpic.png" alt="coding" width="200"/>
 [Simple Dropdown Menu Using HTML & CSS](https://www.youtube.com/watch?v=dmFC1e_CUAQ)
+- [Mission-Statement-Quote]<img src="./public/images/notebookpic.png(https://www.solvedconsulting.com/blog/crafting-effective-mission-statements-for-schools-a-comprehensive-guide#:~:text=Example%201%3A%20%22Our%20mission%20is%20to%20ignite%20a%20passion%20for,in%20our%20high%20school%20students.%22)
 
 
 
