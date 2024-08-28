@@ -37,4 +37,28 @@
     align-self: flex-end;
     margin-right: 40px;
   }
+  li {
+    /* Add some padding to the list item */
+    padding: 10px;
+  }
+  
+  #logout-form {
+    /* Make the form inline-block so it doesn't take up the whole width */
+    display: inline-block;
+  }
+  
+  #logout-form button[type="submit"] {
+    /* Style the logout button */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #logout-form button[type="submit"]:hover {
+    /* Add a hover effect to the logout button */
+    background-color: #444;
+  }
   
