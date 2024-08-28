@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif; /* Changed monospace to sans-serif */
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -30,13 +30,15 @@ nav {
     color: black;
     text-decoration: none;
     font-size: 28px;
-    font-family: 'RobotoRegular', sans-serif; /* Added quotes around font family */
+    font-family: 'RobotoRegular', sans-serif;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
     list-style: none;
+    margin: 0; /* Added to remove default margin */
+    padding: 0; /* Added to remove default padding */
 }
 
 .nav-links a {
@@ -45,13 +47,13 @@ nav {
     color: black;
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     transition: all ease-in-out 100ms;
 }
 
 .nav-links a:hover {
-    text-decoration: underline wavy navy;
+    text-decoration: underline navy;
 }
 
 .menu-toggle {
@@ -116,6 +118,12 @@ nav {
         display: none;
         flex-basis: 100%;
         flex-wrap: wrap;
+        padding: 0; /* Removed padding: 30px 16px; */
+        margin-left: 0;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 20px;
+        background-color: maroon;
     }
     .nav-links li {
         flex-basis: 100%;
@@ -123,13 +131,5 @@ nav {
     .nav-links a {
         text-align: center;
         font-size: 28px;
-    }
-    .nav-links {
-        padding: 30px 16px;
-        margin-left: 0;
-        border: none;
-        border-radius: 0;
-        margin-bottom: 20px;
-        background-color: maroon; /* Moved this property to the correct selector */
     }
 }
