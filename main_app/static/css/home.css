@@ -1,3 +1,4 @@
+
  h1{
     color: navy;
     font-size: 30px;
@@ -6,8 +7,15 @@
 p{
     color: black;
     font-size: 20px;
-    
-    font-size: 20px;
     text-align: center;
-
+    border-left: 2px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    display: block; /* add this line */
+    background-color: #f0f0f0; /* add a light gray background */
+    padding: 20px; /* add some padding to create a block effect */
+    border-radius: 10px; /* add a slight rounded corner effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow effect */
 }

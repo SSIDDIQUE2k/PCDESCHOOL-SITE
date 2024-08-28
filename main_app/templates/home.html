@@ -3,16 +3,20 @@
 
 {% block title %}Home{% endblock %}
 
-
 {% block head %}
-    {% comment %} <link rel="stylesheet" href="{% static 'css/home.css' %}" /> {% endcomment %}
 
+<link rel="stylesheet" href="{% static 'css/home.css' %}" />
 {% endblock %}
 
 {% block content %}
-    <h1>Mission Statement</h1>
-    <hr /> <!-- added closing slash -->
-    <p class="page-content">
-        Our mission is to ignite a passion for lifelong learning, empower students to think critically, and prepare them for a successful future. We strive to create an inclusive and supportive environment that fosters curiosity, resilience, and creativity. By integrating innovative teaching methods with real-world experiences, we aim to equip students with the skills and confidence to navigate an ever-changing world. Our commitment is to nurture each individual’s potential, encouraging them to embrace challenges and pursue their goals with enthusiasm and integrity.
-    </p>
+    <header>
+        <h1>Mission Statement</h1>
+        <hr />
+    </header>
+    <div class="page-content">
+        <p>
+            Our mission is to ignite a passion for lifelong learning, empower students to think critically, and prepare them for a successful future. We strive to create an inclusive and supportive environment that fosters curiosity, resilience, and creativity. By integrating innovative teaching methods with real-world experiences, we aim to equip students with the skills and confidence to navigate an ever-changing world. Our commitment is to nurture each individual’s potential, encouraging them to embrace challenges and pursue their goals with enthusiasm and integrity.
+        </p>
+    </div>
+    
 {% endblock %}
