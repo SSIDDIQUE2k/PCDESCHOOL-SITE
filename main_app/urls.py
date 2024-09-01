@@ -11,7 +11,7 @@ urlpatterns = [
     path('teachers/create/', views.TeacherCreate.as_view(), name='teacher-create'),
     path('teachers/<int:pk>/update/', views.TeacherUpdate.as_view(), name='teacher-update'),
     path('teachers/<int:pk>/delete/', views.TeacherDelete.as_view(), name='teacher-delete'),
-    path('accounts/signup/', views.signup, name='sign-up'),
+    path('signup/', views.signup, name='sign-up'),
 
     
     
