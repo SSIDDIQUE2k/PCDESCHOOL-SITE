@@ -1,0 +1,46 @@
+/* Base styling for the academics page */
+.content {
+    font-family: 'Poppins', sans-serif; /* Consistent font usage */
+    margin: 20px auto;
+    max-width: 800px; /* Limiting width for better readability */
+    color: #333; /* Dark grey text for readability */
+    background-color: #f9f9f9; /* Soft background to reduce eye strain */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    color: #0c1f51; /* Dark blue for a strong header presence */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4682b4; /* Lighter blue for secondary headers */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #444; /* Slightly darker grey for emphasis */
+}
+
+/* Ensuring responsiveness */
+@media (max-width: 768px) {
+    .content {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 18px; /* Smaller font size for smaller screens */
+    }
+
+    p {
+        font-size: 14px; /* Adjusting text size for mobile readability */
+    }
+}

@@ -18,8 +18,15 @@ urlpatterns = [
     path('academics_directories/academics', views.Academics, name='academics'),
     path('academics_directories/conduct', views.Conduct, name='conduct'),
     path('academics_directories/attendance', views.attendance, name='attendance'),
-    path('spg_directories/a-d_procedures', views.a_d_Procedures, name='a-d_procedures')
-    
+    path('spg_directories/a-d_procedures', views.a_d_Procedures, name='a-d_procedures'),
+    path('spg_directories/health-issues', views.Health_Issues, name='health-issues'),
+    path('spg_directories/attire_requirement', views.attire_requirement, name='attire_requirement'),
+    path('spg_directories/gym', views.Gym, name='gym'),
+    path('spg_directories/electronics', views.Electronics, name='electronics'),
+       path('spg_directories/trips', views.Trips, name='trips'),
+       
+
+
 
  
     

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/spg/trips.css' %}" />
+
+<!-- Main header for the page -->
+<h1><strong>Field Trips</strong></h1>
+
+<div class="content">
+    <p>
+        We recognize the importance of field trips as a means of helping students learn as much as possible about the world in which they live. The school also recognizes the added responsibility of ensuring the safety of students outside the school environment.
+        Students are required to follow school rules during field trips. Students who choose not to follow school rules may be denied participation in future field trips, or may be required to be directly supervised by a parent. A consent form may be required for certain trips.
+    </p>
+</div>
+
+{% endblock %}

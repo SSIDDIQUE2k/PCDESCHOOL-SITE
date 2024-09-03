@@ -1,0 +1,40 @@
+/* Style for the main header */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #2c3e50; /* Dark blue color for a professional look */
+    text-align: center; /* Center the main header */
+    margin-top: 20px; /* Space above the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Style for the content container */
+.content {
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 1.1rem;
+    color: #4a4a4a; /* Dark grey for readability */
+    line-height: 1.6; /* Space between lines for better readability */
+    max-width: 800px; /* Limit the width of the content for readability */
+    margin: 0 auto; /* Center the content container */
+    padding: 20px; /* Padding around the content */
+    background-color: #f8f9fa; /* Light grey background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for a smooth look */
+}
+
+/* Additional styling for paragraphs within the content */
+.content p {
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    .content {
+        font-size: 1rem; /* Adjust font size for better readability */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

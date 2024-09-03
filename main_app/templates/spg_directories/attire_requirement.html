@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/spg/attire.css' %}"/>
+
+<!-- Main header for the page -->
+<h1>Dress Code</h1>
+
+<!-- Main content section with improved structure -->
+<div class="page-content">
+    <p>Students must adhere to the following dress code guidelines:</p>
+
+    <!-- List for general dress code requirements -->
+    <ul>
+        <li>Students must be fully attired in school uniform. Uniforms should be worn during early Fall and Spring.</li>
+        <li>Fourth grade and above are mandated to wear Oxford shirts and navy blue shoes.</li>
+        <li>Girls wear a khaki vest, and both boys and girls wear blazers.</li>
+        <li>Any changes outside of the normal dress code will be noted on the monthly calendar.</li>
+        <li>Colorful sneakers and black shoes are not allowed.</li>
+    </ul>
+
+    <!-- Additional guidelines -->
+    <p>In the event clothing is deemed inappropriate:</p>
+    <ul>
+        <li>You will be phoned to bring a change of clothing, or your child will be sent home.</li>
+        <li>Students should dress for the weather conditions. In winter, boots, hats, coats, gloves, or mittens are necessary.</li>
+        <li>Students should walk with their uniform, including shoes, to change once they enter the building.</li>
+    </ul>
+
+    <!-- Guidelines specific to accessories and exceptions -->
+    <p>Additional dress code rules:</p>
+    <ul>
+        <li>For girls, stud and/or small hoop earrings are allowed.</li>
+        <li>Boys are prohibited from wearing earrings and braided hair.</li>
+        <li>When uniforms are not required, shorts of appropriate length can be worn.</li>
+        <li>Please label all clothing to avoid confusion and loss.</li>
+    </ul>
+
+    <!-- Section for physical education dress code -->
+    <h2>Physical Education (Gym)</h2>
+    <p>Specific guidelines for gym attire will be provided separately to ensure appropriate dress for physical activities.</p>
+</div>
+{% endblock %}

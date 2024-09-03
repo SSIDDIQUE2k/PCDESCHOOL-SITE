@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/spg/electronics.css' %}" />
+
+<!-- Main header for the page -->
+<h1>Electronics and Internet Safety</h1>
+
+<div class="content">
+    <h2>Electronic Devices</h2>
+    <p>
+        Students are restricted in the use of school telephones. Parents should call for students only in cases of emergency. IPods, MP3 Players, Game Boys, and similar devices should not be taken on the bus or brought to school. They are expensive items that can be lost or broken, and result in a disruption to students' learning. If found on students, they will be confiscated and will not be returned until the end of the school year. Cell phones must be turned in every morning and will be returned at the end of the school day.
+    </p>
+
+    <h2>Internet Safety</h2>
+    <p>
+        The Julia Nicholson Leadership Academy provides Internet access to its students and staff through computers located in classrooms, a computer lab, and the library center. We stress the importance of using it as one of many educational resources available to students as a learning tool. Internet use at Julia Nicholson Leadership Academy will be closely monitored, and students will not use the Internet without supervision. Parents please monitor your child's internet services at home (AIM, Facebook, Twitter, MySpace, Tagged, etc.) because improper use of these sites by students often results in problems within the school environment from abuse of other people's privacy.
+    </p>
+
+  
+</div>
+
+{% endblock %}

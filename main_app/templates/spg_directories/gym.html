@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/spg/gym.css' %}"/>
+
+<!-- Main header for the page -->
+<h1 class="page-header">Physical Education (Gym)</h1>
+
+<!-- Main content section with introductory text -->
+<div class="page-content">
+    <p>
+        Gym is a must! Physical Education classes for all grades meet once per week for 45 minutes. Students learn and practice skills for traditional games. Teamwork, cooperation, and sportsmanship are stressed throughout the entire school year. The goal is to motivate students to stay active and healthy.
+    </p>
+    <br>
+    <p>
+        Participate in a variety of enjoyable physical activities which encourage the pursuit of positive life long health and fitness attitudes.
+Each student is expected to come to class dressed in black sneakers and gym uniform that will allow him/her child to move safely through any activity. Loose jewelry is not safe.
+    </p>
+</div>
+{% endblock %}

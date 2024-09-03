@@ -189,7 +189,7 @@ nav.scrolled {
     }
 
     .menu-toggle {
-        display: none;
+        display: block; /* or display: inline-block; */
         cursor: pointer;
         width: 36px;
         height: 24px;
@@ -273,4 +273,12 @@ nav.scrolled {
         margin-left: -10px;
         margin-top: 20px;
     }
+}
+footer {
+    background-color: #0c1f51;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 20rem;
 }

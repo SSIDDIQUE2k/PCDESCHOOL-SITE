@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/academics/attendance.css' %}" />
+
+<!-- Main header for the page -->
+<h1><strong>Emergency Information Sheets</strong></h1>
+
+<div class="content">
+    <p>
+        In times of emergency, it is extremely important that the office has information that will enable us to contact parents immediately. Therefore, parents are asked to complete and return to school the Emergency Information Sheets sent home at the start of the school year.
+        This sheet should be completed for every child attending school. Please notify the school of any changes in information during the school year.
+    </p>
+</div>
+
+<h1><strong>Health Issues</strong></h1>
+
+<div class="content">
+    <p>
+        Requests for changes to a child's normal school day due to health issues will only be accommodated if accompanied by a written note from a physician. If your child is absent for more than three days, a doctor's note will be required. Please do not send your child to school if:
+    </p>
+    <ul>
+        <li>He/she shows symptoms of more than a common cold.</li>
+        <li>He/she has had a fever of 100.4°F or more within the last 24 hours.</li>
+        <li>He/she has had diarrhea or vomiting within the last 24 hours and has not had at least two meals of solid food.</li>
+        <li>He/she has a contagious condition such as strep throat, ringworm, or conjunctivitis (pink eye) unless he/she has been on antibiotic medication for at least 24 hours.</li>
+        <li>He/she has been ill during the night and has not slept well.</li>
+    </ul>
+</div>
+
+{% endblock %}

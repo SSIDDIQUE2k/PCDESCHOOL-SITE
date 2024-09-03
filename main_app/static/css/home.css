@@ -1,0 +1,37 @@
+/* Center the content horizontally and vertically */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    text-align: center;
+    background-color: #f0f8ff; /* Light background color */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for a smooth look */
+}
+
+/* Style the h2 element */
+.welcome-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #4a4a4a; /* Dark grey for a professional look */
+    margin-bottom: 10px; /* Space between the h2 and h1 */
+}
+
+/* Style the h1 element */
+.welcome-section h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    color: cadetblue; /* Matches the navigation bar color */
+    margin-bottom: 15px; /* Space between the h1 and p */
+}
+
+/* Style the paragraph */
+.welcome-section p {
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 1.2rem;
+    color: #333; /* Dark text for readability */
+    max-width: 600px; /* Limit the width for better readability */
+}

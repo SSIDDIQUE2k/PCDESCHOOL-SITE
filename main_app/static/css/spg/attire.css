@@ -1,0 +1,63 @@
+/* Base styling for the about/statement page */
+.page-content {
+    font-family: 'Poppins', sans-serif; /* Ensuring consistent font usage */
+    margin: 20px;
+    color: #333; /* Dark grey text for readability */
+    background-color: #f4f4f4; /* Light background to reduce eye strain */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    background-color: rgb(0, 1, 55);
+    color: #e7e7e7; /* Dark blue for a strong header presence */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4682b4; /* Lighter blue for secondary headers */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.6; /* Increased line height for better readability */
+    font-size: 16px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444; /* Slightly darker grey for emphasis */
+}
+
+/* Additional hover effects for interactive elements */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .page-content {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 18px; /* Smaller font size for smaller screens */
+    }
+
+    p, li {
+        font-size: 14px; /* Adjusting text size for mobile readability */
+    }
+}

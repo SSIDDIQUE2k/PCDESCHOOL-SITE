@@ -97,7 +97,22 @@ def attendance(request):
     return render(request, 'academics_directories/attendance.html')
 
 def a_d_Procedures(request):
-    return render(request, 'spg_directories/a-d_procedures.html')
+    return render(request, 'spg_directories/a_d_procedures.html')
+
+def Health_Issues(request):
+    return render(request, 'spg_directories/health-issues.html')
+
+def attire_requirement(request):
+    return render(request, 'spg_directories/attire_requirement.html')
+
+def Gym(request):
+    return render(request, 'spg_directories/gym.html')
+
+def Electronics(request):
+    return render(request, 'spg_directories/electronics.html')
+
+def Trips(request):
+    return render(request, 'spg_directories/trips.html')
 
 
 
