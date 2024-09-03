@@ -189,14 +189,51 @@ nav.scrolled {
     }
 
     .menu-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: none;
+        cursor: pointer;
+        width: 36px;
+        height: 24px;
         position: absolute;
-        top: 15px;
+        top: 10px;
         right: 20px;
+        z-index: 1010;
     }
-
+    
+    .menu-toggle .bar {
+        height: 4px;
+        background-color: white;
+        width: 100%;
+        margin: 5px 0; /* Ensures clear spacing between bars */
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+    
+    /* Positioning each bar distinctly to ensure visibility */
+    .menu-toggle .bar:nth-child(1) {
+        top: 0px; /* Positioned at the top of the toggle */
+    }
+    
+    .menu-toggle .bar:nth-child(2) {
+        top: 10px; /* Positioned in the middle of the toggle */
+    }
+    
+    .menu-toggle .bar:nth-child(3) {
+        top: 20px; /* Positioned at the bottom of the toggle */
+    }
+    
+    /* Transformations applied when the menu is active */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg); /* Moves to middle and rotates */
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0; /* Middle bar disappears */
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg); /* Moves to middle and rotates opposite */
+    }
+    
     .nav-links,
     .nav-links.active {
         display: flex;
