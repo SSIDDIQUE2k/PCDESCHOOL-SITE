@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/about/statement.css' %}"/>
+
+<!-- Main header for the page -->
+<h1>Academic Policies</h1>
+
+<!-- Main content section with introductory text -->
+<div class="page-content">
+    <p>
+        People's DayCare Elementary School, also known as The Julia Nicholson Leadership Academy, offers a curriculum program designed to promote curiosity, depth of knowledge, and connections between content and real-life applications. This program endeavors to enhance learning by promoting whole-school initiatives, collaboration among classroom teachers, and working with small groups of students. Initiatives include field trips, guest speakers, assemblies, and scholars' displays. These are intended to provide students with unique experiences and teach relevant content. School-wide and classroom programs offer important opportunities for volunteer involvement. Parents and community members are encouraged to share their skills, knowledge, and experience with students. Please feel free to contact the Director or Principal with your suggestions.
+    </p>
+</div>
+
+{% endblock %}

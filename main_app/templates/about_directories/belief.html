@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/about/belief.css' %}"/>
+
+<!-- Main header for the page -->
+<header>
+    <h1>School-Cred</h1>
+</header>
+
+<!-- Main content section with introductory text -->
+<section class="page-content">
+    <p>
+        This is our school, where peace dwells. Let the rooms be filled with contentment.
+        Love abides here: love of one another, love of mankind, love of life itself, and love of God. Let us remember that, just as many hands build a house, so many hearts make a school.
+    </p>
+</section>
+
+<!-- Section for the belief statement -->
+<section class="page-content">
+    <h1>Belief Statement</h1> <!-- Changed to h2 for hierarchical correctness -->
+    <p>We believe:</p>
+    <ul>
+        <li>Learning is a lifelong journey.</li>
+        <li>Children, families, and the school community share responsibility for learning and behavior.</li>
+        <li>Everyone thrives in a safe environment.</li>
+        <li>Each staff member provides an atmosphere where children can question and explore, which helps them develop skills to solve problems independently and collaboratively.</li>
+        <li>Respect for others must be modeled, so children can experience what kindness looks like and feels like as they interact with others.</li>
+        <li>All students can learn, but not all learn in the same way or at the same pace.</li>
+        <li>Regular attendance, punctuality, and preparedness are essential for success in school.</li>
+        <li>Change is a source of growth and development.</li>
+        <li>We can accomplish more by working together than we can by working alone.</li>
+    </ul>
+</section>
+
+{% endblock %}

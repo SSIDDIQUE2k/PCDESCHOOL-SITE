@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/academics/dayCare.css' %}"/>
+
+<!-- Main header for the page -->
+<h1><strong>DayCare</strong></h1>
+
+<div class="content">
+    <p>Day Care: Pre-Nursery through Kindergarten operates year-round. If you are planning to take your child out for the entire summer, one month's tuition must be paid in advance. If you are planning to take your child out for one month during the summer, two weeks' tuition must be paid in advance. This is to secure your child's space upon return.</p>
+    <p class="payment-methods">We accept credit and debit cards, along with cash, money orders, or checks.</p>
+</div>
+
+{% endblock %}

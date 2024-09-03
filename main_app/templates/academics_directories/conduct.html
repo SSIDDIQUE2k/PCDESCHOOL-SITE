@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/academics/conduct.css' %}" />
+
+<!-- Main header for the page -->
+<h1><strong>Student Conduct and Discipline</strong></h1>
+
+<div class="content">
+    <p>
+        A Code of Discipline is provided by the Julia Nicholson Leadership Academy.
+        Please become familiar with the expectations and consequences. Areas addressed include bus, playground, classroom, hallway, bathroom, after-school behavior, academic dishonesty, language, vandalism, fighting, disrespect to peers and staff members, and harassment.
+    </p>
+
+    <p>
+        Students and staff at Julia Nicholson Leadership Academy work together to construct a community that is orderly, safe, respectful, and friendly. We believe that all children have the right to learn and play in a school that is free from harassment. 
+    </p>
+
+    <p><strong>Misbehavior may result in the following consequences:</strong></p>
+    <ul>
+        <li>Inappropriate behavior may warrant removal from the classroom.</li>
+        <li>Students may be sent to the principal's office to discuss their behavior and the consequences.</li>
+        <li>Continued inappropriate behavior may warrant parents being called in.</li>
+        <li>Based on the severity of the violation, suspension may be warranted.</li>
+        <li>Severe misconduct may lead to expulsion at the discretion of the administration.</li>
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Correct usage of the static tag to load CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/academics/academic.css' %}" />
+
+<!-- Main content container -->
+<div class="main-content">
+    <!-- Homework Section -->
+    <section id="homework" aria-label="Homework Policies">
+        <h1>Homework</h1>
+        <p>
+            <strong>Meaningful homework assignments</strong>, to be accomplished outside of the regular classroom, are an integral part of the teaching and learning process. Homework provides time to <strong>practice, maintain, complete, make-up, or enrich</strong> classroom activities. <strong>Homework is given nightly</strong> and all homework must be <strong>signed by parents</strong>. It is the responsibility of parents to provide all materials needed for projects to be done at home. Homework must reflect <strong>student effort</strong> and all assignments must be presented in a <strong>decent and timely manner</strong>. Homework will be taken into account as a part of the students' <strong>final grade</strong>.
+        </p>
+    </section>
+
+    <!-- Tests Section -->
+    <section id="tests" aria-label="Testing Policies">
+        <h1>Tests</h1>
+        <p>
+            The purpose of tests is to <strong>assess and measure students' performance</strong> according to state standards and the courses of study within the disciplines. <strong>Tests will be given weekly</strong> in all subject areas. <strong>Final exams</strong> will be given quarterly. There will be <strong>four</strong> for the calendar year with a passing score of <strong>70%</strong> for individual subjects. A score below <strong>75%</strong> will require <strong>remedial work, tutoring, and/or mandatory summer school</strong>.
+        </p>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" aria-label="Awards">
+        <h1>Awards</h1>
+        <p>
+            The purpose of awards is to <strong>recognize and celebrate students' achievements</strong> across various categories and disciplines. Awards ceremonies are held to honor those who excel academically, artistically, or in community service throughout the year.
+        </p>
+    </section>
+
+    <!-- Reports Section -->
+    <section id="reports" aria-label="Report Cards">
+        <h1>Reports</h1>
+        <ul>
+            <li><strong>Report cards:</strong> There are <strong>four reporting periods</strong> in the school year. A report card is given at <strong>open-school conferences</strong> in November and March; the other two are sent home with the students.</li>
+            <li><strong>Progress reports:</strong> Issued periodically to indicate any concerns or missing projects. These allow for early intervention from teachers and parents.</li>
+            <li>If at any time you do not see homework, tests, reports, or assignments coming home, please feel free to communicate with the office and/or teacher.</li>
+        </ul>
+    </section>
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+/* General Body Styling */
+body {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif; /* Strong, clear font */
+    background-color: #f0f0f0; /* Neutral, soothing background */
+    color: #333; /* High contrast for easy reading */
+    line-height: 1.8; /* Spacious line height for clarity */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+h1 {
+    background-color: rgb(0, 1, 55); /* Consistent, professional color */
+    color: white;
+    padding: 30px 0; /* Enhanced visual impact */
+    text-align: center;
+    font-size: 2.5rem; /* Larger for emphasis */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle depth */
+}
+
+/* Main Content Styling */
+.page-content {
+    width: 80%; /* Optimal reading width */
+    margin: 0 auto; /* Center alignment for structure */
+    padding: 30px; /* Comfortable padding for content separation */
+    background-color: white; /* Clear and focused background */
+    border-radius: 10px; /* Modern, soft corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Pronounced shadow for focus */
+}
+
+.page-content p {
+    font-size: 1.2rem; /* Readable text size */
+    color: #2a2a2a; /* Dark gray for emphasis */
+    margin-bottom: 20px; /* Spacing for clear separation */
+}
+
+/* Specific Styling for Pricing Information */
+.page-content p.price-highlight {
+    font-size: 1.4rem; /* Larger font size to stand out */
+    color: #d80000; /* Red color to draw attention */
+    font-weight: bold; /* Bold for emphasis */
+    background-color: #f9f9f9; /* Slight background to highlight the area */
+    padding: 10px; /* Padding around the text for visibility */
+    border-left: 5px solid #d80000; /* Strong visual indicator */
+}

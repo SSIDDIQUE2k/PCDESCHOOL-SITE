@@ -39,13 +39,15 @@ nav.scrolled {
 }
 
 .logo img {
+        position: sticky;
+    margin-top: 1.5rem;
     width: 120px;
-    max-width: 300px;
-    margin-top: 1.6rem;
+    max-width: 100%;
 }
 
 .logo h3 {
-    margin-left: -1rem;
+    position: sticky;
+    margin-left: -4lvh;
     color: white;
     font-size: 24px;
     font-weight: 600;
@@ -74,13 +76,14 @@ nav.scrolled {
     background-color: maroon;
     color: white;
 }
-
 .menu-toggle {
     display: none;
     cursor: pointer;
     width: 36px;
     height: 24px;
-    position: relative;
+    position: absolute;
+    top: 10px;
+    right: 20px;
     z-index: 1010;
 }
 
@@ -88,24 +91,37 @@ nav.scrolled {
     height: 4px;
     background-color: white;
     width: 100%;
-    margin: 4px 0;
+    margin: 5px 0; /* Ensures clear spacing between bars */
     position: absolute;
     transition: all 0.3s ease;
 }
 
+/* Positioning each bar distinctly to ensure visibility */
+.menu-toggle .bar:nth-child(1) {
+    top: 0px; /* Positioned at the top of the toggle */
+}
+
+.menu-toggle .bar:nth-child(2) {
+    top: 10px; /* Positioned in the middle of the toggle */
+}
+
+.menu-toggle .bar:nth-child(3) {
+    top: 20px; /* Positioned at the bottom of the toggle */
+}
+
+/* Transformations applied when the menu is active */
 .menu-toggle.active .bar:nth-child(1) {
-    transform: rotate(45deg);
-    top: 8px;
+    transform: translateY(10px) rotate(45deg); /* Moves to middle and rotates */
 }
 
 .menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
+    opacity: 0; /* Middle bar disappears */
 }
 
 .menu-toggle.active .bar:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 8px;
+    transform: translateY(-10px) rotate(-45deg); /* Moves to middle and rotates opposite */
 }
+
 
 /* Dropdown menu styles */
 .dropdown {
@@ -115,8 +131,9 @@ nav.scrolled {
 
 .dropdown-content {
     display: none;
+    list-style: NONE;
     position: absolute;
-    background-color: #6d30e9;
+    background-color: maroon;
     min-width: 150px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -161,6 +178,7 @@ nav.scrolled {
     transform: rotate(180deg);
 }
 
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     nav {
@@ -179,9 +197,10 @@ nav.scrolled {
         right: 20px;
     }
 
-    .nav-links.active,
-    .nav-links {
+    .nav-links,
+    .nav-links.active {
         display: flex;
+        list-style: none;
         width: 100%;
         flex-direction: column;
         background-color: #0c1f51;
@@ -208,12 +227,13 @@ nav.scrolled {
     }
 
     .logo img {
+        margin-top: 35px;
         width: 80px;
     }
 
     .logo h3 {
         font-size: 18px;
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: -10px;
+        margin-top: 20px;
     }
 }

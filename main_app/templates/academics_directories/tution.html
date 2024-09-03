@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/academics/tution.css' %}"/>
+
+<!-- Main header for the page -->
+<h1><strong>Tuition and School Fees</strong></h1>
+
+<!-- Main content section with introductory text -->
+<div class="page-content">
+    <p class="price-highlight">
+        <strong>Tuition/School Fees for Pre-Nursery through Eighth Grade is due on the first of each month.</strong> A grace period is extended until the fifth. After the fifth, a late fee of $25 will be applied to your account.
+    </p>
+    
+    <p>
+        <strong>If tuition is not paid by the tenth of the month, the student will not be admitted to the school until the tuition is paid in full.</strong> Should a student enter the building, they will be retained in the office and the parents will be immediately notified.
+    </p>
+    <strong><em>All fees are non-refundable.</em></strong>
+</div>
+
+{% endblock %}

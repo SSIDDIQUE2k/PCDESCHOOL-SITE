@@ -1,0 +1,53 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Consistent, readable font */
+    background-color: #f7f7f7; /* Neutral background to minimize distractions */
+    color: #333; /* Dark color for readability */
+    line-height: 1.6; /* Appropriate line height for reading comfort */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+h1 {
+    background-color: rgb(0, 1, 55); /* School-color-themed header background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px; /* Space below the header for visual separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Content Container Styling */
+.content {
+    padding: 20px;
+    margin: auto; /* Center the content for better focus */
+    width: 90%; /* Optimal reading width */
+    background-color: white; /* Clear contrast for content */
+    border-radius: 8px; /* Softened edges for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for layering effect */
+    line-height: 1.8; /* Enhanced line height for better readability */
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1rem; /* Standard readable font size */
+    color: #555; /* Slightly lighter than headers for contrast */
+    margin-bottom: 15px; /* Separation between paragraphs */
+}
+
+/* List Styling */
+ul {
+    margin-left: 20px; /* Indent lists for clear hierarchy */
+    list-style-type: disc; /* Disc style list bullets */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items for clarity */
+}
+
+/* Strong Text Emphasis */
+strong {
+    color: #d14; /* Red color to highlight important text */
+    font-weight: bold; /* Bold for emphasis */
+}

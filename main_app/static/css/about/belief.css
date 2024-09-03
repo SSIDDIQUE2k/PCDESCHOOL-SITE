@@ -1,0 +1,55 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Light gray background for softer appearance */
+    color: #333; /* Darker text for better readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+header h1 {
+    background-color: rgb(1, 27, 70); /* Cadet blue background as specified */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+/* Page Content Styling */
+.page-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white; /* White background for content sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Consistency in shadowing */
+}
+
+.page-content h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+.page-content p {
+    font-size: 1.2em;
+}
+
+/* Unordered List Styling */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
+a {
+    color: #0066cc; /* Blue color for links */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

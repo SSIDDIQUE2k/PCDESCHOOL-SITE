@@ -1,0 +1,44 @@
+/* base.css */
+body {
+    font-family: 'RobotoRegular', Arial, sans-serif;
+    background-color: #f4f4f4; /* Soft background for easy reading */
+    color: #333; /* Dark grey text for high contrast */
+    line-height: 1.6; /* Spacious line height for readability */
+    margin: 0;
+    padding: 0;
+}
+
+ h1 {
+    background-color: rgb(1, 27, 70); /* Cadet blue background as specified */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #0077CC, transparent); /* Gradient line under header */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.page-content {
+    background-color: #ffffff; /* White background for content area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Maximum width of content, centers it on larger screens */
+    font-size: 18px; /* Larger font-size for readability */
+}
+
+a {
+    color: #0077CC; /* School color for links */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}

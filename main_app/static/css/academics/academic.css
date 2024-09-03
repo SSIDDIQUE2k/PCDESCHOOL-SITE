@@ -1,0 +1,56 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Switching to a universally comfortable font */
+    background-color: #f7f7f7; /* Lighter gray to reduce eye strain */
+    color: #404040; /* Slightly softer black for less harshness */
+    line-height: 1.8; /* Increasing line height for better readability */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Global Header Styling */
+h1 {
+    background-color: rgb(0, 1, 55); /* A darker shade of teal for more contrast */
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px; /* More spacing for better separation */
+    font-size: 2.2rem; /* Larger font size for emphasis */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Stronger shadow for more depth */
+    border-bottom: 3px solid #023240; /* Dark border for solid visual separation */
+}
+
+/* Section Styling */
+section {
+    padding: 25px 30px; /* Increased padding for a more spacious feel */
+    margin: 0 auto 30px; /* Consistent bottom margin for uniform spacing */
+    width: 85%; /* Slightly narrower for a more focused text area */
+    background-color: #fff; /* Maintaining a clean white background */
+    border-radius: 10px; /* More pronounced rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for a pop-out effect */
+    transition: transform 0.3s; /* Smooth transform on hover for interactivity */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lift effect on hover for a dynamic interaction */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover for emphasis */
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.15rem; /* Slightly larger font for easier reading */
+    margin-bottom: 18px; /* More margin for better text separation */
+    color: #4a4a4a; /* Darker grey for improved readability */
+    text-align: justify; /* Justified text for cleaner alignment */
+}
+
+/* Specific Styling for Key Terms */
+p.key-details {
+    font-weight: bold; /* Maintaining bold for importance */
+    background-color: #e1eff6; /* Soft blue for emphasis without distraction */
+    padding: 15px; /* Larger padding for better distinction */
+    border-left: 8px solid #0e0845; /* Thicker, vibrant border for visibility */
+    margin-top: 20px; /* Top margin for better visual grouping */
+}
