@@ -16,7 +16,10 @@ urlpatterns = [
     path('academics_directories/tution', views.Tution, name='tution'),
     path('academics_directories/dayCare', views.DayCare, name='dayCare'),
     path('academics_directories/academics', views.Academics, name='academics'),
-    path('academics_directories/conduct', views.Conduct, name='conduct')
+    path('academics_directories/conduct', views.Conduct, name='conduct'),
+    path('academics_directories/attendance', views.attendance, name='attendance'),
+    path('spg_directories/a-d_procedures', views.a_d_Procedures, name='a-d_procedures')
+    
 
  
     

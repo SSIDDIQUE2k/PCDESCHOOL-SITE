@@ -38,17 +38,19 @@
                         <li><a href="{% url 'dayCare' %}">DayCare</a></li>
                         <li><a href="{% url 'academics' %}">Academics</a></li>
                         <li><a href="{% url 'conduct' %}">Student Conduct/Discipline</a></li>
+                        <li><a href="{% url 'attendance' %}">Attendance</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Parents/Guardians</a>
+                    <a href="#" class="dropbtn">Students/Parents/Guardians</a>
                     <ul class="dropdown-content">
-                        <li><a href="{% url 'mission-statement' %}">Mission Statement</a></li>
+                        <li><a href="{% url 'a-d_procedures' %}">Arrival & Dismissal Procedures</a></li>
+                        <li><a href="{% url 'attendance' %}">Attendance</a></li>
                         <li><a href="{% url 'mission-statement' %}">Our Belief</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="{% url 'teacher-index' %}" class="dropbtn">Staff Directory</a>
+                   <a href="{% url 'teacher-index' %}" class="dropbtn1">Staff Directory</a>
                     <ul class="dropdown-content">
                         {% if user.is_authenticated %}
                         <li><a href="{% url 'teacher-create' %}">Add Staff</a></li>

@@ -1,0 +1,62 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clear and modern font for readability */
+    background-color: #f8f9fa; /* Soft background to minimize eye strain */
+    color: #333; /* Dark enough for good contrast */
+    line-height: 1.6; /* Spacious line height for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+h1 {
+    background-color: rgb(0, 1, 55); /* School color-themed header background */
+    color: white;
+    padding: 20px 10px; /* Adequate padding for visual emphasis */
+    text-align: center;
+    border-radius: 3px; /* Slight rounding of corners */
+    margin: 20px auto; /* Top and bottom margin for space, auto for horizontal centering */
+    width: 95%; /* Slightly less than full width for a framed effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Content Container Styling */
+.content {
+    padding: 20px;
+    margin: 10px auto 20px; /* Slightly closer to header and more space at the bottom */
+    width: 90%; /* Width consistent with header for alignment */
+    background-color: white; /* Clear background for content focus */
+    border-radius: 5px; /* Consistency in rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Matching shadow for consistency */
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 25px; /* Accessible font size */
+    color: #555; /* Slightly lighter than main text for subtlety */
+    margin-bottom: 15px; /* Space between paragraphs for visual separation */
+}
+
+/* List Styling */
+ul {
+    font-size: 25px;
+    padding-left: 20px; /* Indent for list clarity */
+    list-style-type: circle; /* Style to differentiate from default */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.6; /* Enhanced line height for list readability */
+}
+
+/* Strong Text Emphasis */
+strong {
+    color: #ffffff; /* Strong color to draw attention to important items */
+    font-weight: bold; /* Bold for further emphasis */
+}
+p1{
+    font-size: 15px; /* Accessible font size */
+    text-decoration: underline;
+    color: #b70000; /* Slightly lighter than main text for subtlety */
+    margin-bottom: 15px; /* Space between paragraphs for visual separation */
+}

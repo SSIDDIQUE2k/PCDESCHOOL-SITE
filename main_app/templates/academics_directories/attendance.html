@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/academics/attendance.css' %}" />
+
+<!-- Main header for the page -->
+<h1><strong>Attendance</strong></h1>
+
+<div class="content">
+    <p>
+    Regular attendance is important for a child to be successful. Students must attend school every day unless he/she is sick, injured, or is affected by special family circumstances.
+    ﻿﻿Non emergency medical and/or dental appointments should be scheduled outside of school days when ever possible.
+    ﻿﻿Habitual absenteeism is considered as a serious violation.
+    </p>
+</div>
+
+{% endblock %}

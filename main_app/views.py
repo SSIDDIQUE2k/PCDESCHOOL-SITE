@@ -93,7 +93,11 @@ def Academics(request):
 def Conduct(request):
     return render(request, 'academics_directories/conduct.html')
 
+def attendance(request):
+    return render(request, 'academics_directories/attendance.html')
 
+def a_d_Procedures(request):
+    return render(request, 'spg_directories/a-d_procedures.html')
 
 
 

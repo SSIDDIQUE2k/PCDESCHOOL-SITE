@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/spg/a-d_procedures.css' %}" />
+
+<!-- Morning Arrival Procedures -->
+<section>
+    <h1><strong>Morning Arrival Procedures</strong></h1>
+    <div class="content">
+        <p>Students being dropped off should not be sent up to classrooms unescorted. Students must arrive no later than 8:30 A.M. Arriving after 8:30 A.M is considered tardiness, and they may be sent home. Doors will be locked at 8:45 A.M.</p>
+        <p>Please make every effort to ensure that your child arrives at school by 8:30 A.M. Arriving late negatively impacts the learning of your child, as well as interrupts the learning of others.</p>
+    </div>
+</section>
+
+<!-- Dismissal Procedures -->
+<section>
+    <h1><strong>Dismissal Procedures</strong></h1>
+    <div class="content">
+        <ul>
+            <li>All students, with the exception of those in after-school or tutoring programs, will be dismissed at 3:30 P.M. Day Care (Pre-Nursery - Kindergarten) until 6:00 P.M.</li>
+            <li>If someone other than a parent or guardian is picking up your child, notification must be given in writing.</li>
+            <li>It is assumed most students will ride the school bus. If your child is not going to ride the bus, or if they will be riding a different bus at any time, a note must be sent to the school office notifying us before we will allow your child to make a change. Please send these notes in with your child.</li>
+            <li>Parents are requested to pick up their children at 3:30 P.M. There is a 15 minute grace period. </li>
+            <p1>A late fee of $10.00 will be charged for every 15 minutes after 3:45 P.M. for elementary and middle school students. For Pre-Nursery, Kindergarten, and after-school students, a late fee of $10.00 will be charged for every 15 minutes after 6:00 P.M. (NO EXCEPTIONS).<p1>
+        </ul>
+    </div>
+</section>
+
+{% endblock %}
