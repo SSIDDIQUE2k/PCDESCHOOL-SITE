@@ -1,14 +1,52 @@
-<!-- home.html -->
 {% extends 'base.html' %}
 {% load static %}
 {% block head %}
 {% endblock %}
-{% block title %}Home - Peoples Daycare Elementary School{% endblock %}
+{% block title %}Home - People's Daycare And Elementary School{% endblock %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+
+<!-- Welcome Section -->
 <section id="welcome" class="welcome-section">
     <h2>Welcome to</h2>
-    <h1>Peoples Daycare Elementary School</h1>
+    <h1>People's Daycare And Elementary School</h1>
     <p>Your child's future begins here!</p>
 </section>
+
+<!-- Social Media Section -->
+<section class="social-media-section">
+    <div class="instagram-section">
+        <h2>@PDCSCHOOL Instagram</h2>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/pdceschool/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+            <a href="https://www.instagram.com/pdceschool/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank">View this profile on Instagram</a>
+        </blockquote>
+    </div>
+    
+    <div class="facebook-section">
+        <h2>@PDCSCHOOL Facebook</h2>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpdceschool&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="331" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+</section>
+
+<section class="announcement-calendar-section">
+    <div class="announcements-section">
+        <h2>Announcements</h2>
+        <ul>
+            {% for announcement in announcements %}
+            <li>
+                <h3>{{ announcement.title }}</h3>
+                <p>{{ announcement.content }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="calendar-section">
+        <h2>School Calendar</h2>
+        <iframe src="https://calendar.google.com/calendar/embed?src=addressbook%23contacts%40group.v.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+</section>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
 {% endblock %}

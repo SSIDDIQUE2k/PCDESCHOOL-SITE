@@ -1,37 +1,243 @@
-/* Center the content horizontally and vertically */
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa; /* Soft light background */
+    color: #333; /* Dark grey for text */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Utility classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Welcome Section */
 .welcome-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     text-align: center;
-    background-color: #f0f8ff; /* Light background color */
-    padding: 20px; /* Padding around the content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 10px; /* Rounded corners for a smooth look */
+    background-color: #003366; /* Dark navy for the background */
+    color: white;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Style the h2 element */
+/* Animated background shapes */
+.welcome-section::before, .welcome-section::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #a51900; /* Tomato red */
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: moveShapes 6s infinite alternate;
+}
+
+.welcome-section::before {
+    top: -50px;
+    left: -50px;
+}
+
+.welcome-section::after {
+    bottom: -50px;
+    right: -50px;
+}
+
 .welcome-section h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    color: #4a4a4a; /* Dark grey for a professional look */
-    margin-bottom: 10px; /* Space between the h2 and h1 */
+    font-size: 2.5rem;
+    animation: slideIn 1.5s ease-in-out;
 }
 
-/* Style the h1 element */
 .welcome-section h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
-    color: cadetblue; /* Matches the navigation bar color */
-    margin-bottom: 15px; /* Space between the h1 and p */
+    font-size: 4rem;
+    color: #ff6347; /* Tomato red */
+    margin-bottom: 15px;
+    animation: zoomIn 1.5s ease-in-out;
 }
 
-/* Style the paragraph */
 .welcome-section p {
-    font-family: 'RobotoRegular', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Social Media Section */
+.social-media-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    background-color: #fafafa;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    max-width: 1400px;
+    margin: 50px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.instagram-section, .facebook-section {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-section:hover, .facebook-section:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.instagram-section h2, .facebook-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Instagram media styles */
+.instagram-media {
+    max-width: 540px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Facebook media styles */
+.facebook-media {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.facebook-media a {
+    color: #1877F2;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.facebook-media a:hover {
+    color: #004dcf;
+    text-decoration: underline;
+}
+
+/* Announcement and Calendar Section */
+.announcement-calendar-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    background-color: #f9fafc;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.announcements-section, .calendar-section {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcements-section:hover, .calendar-section:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.announcements-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.announcements-section li {
+    background: #f5f7fa;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcements-section li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.announcements-section li h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.announcements-section li p {
     font-size: 1.2rem;
-    color: #333; /* Dark text for readability */
-    max-width: 600px; /* Limit the width for better readability */
+    color: #555;
+}
+
+/* Calendar Section Iframe Styling */
+.calendar-section iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Shape movement animation */
+@keyframes moveShapes {
+    from { transform: translateX(0) translateY(0); }
+    to { transform: translateX(30px) translateY(30px); }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .social-media-section, .announcement-calendar-section {
+        flex-direction: column;
+    }
+
+    .instagram-section, .facebook-section, .announcements-section, .calendar-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .welcome-section h1 {
+        font-size: 3rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 2rem;
+    }
 }

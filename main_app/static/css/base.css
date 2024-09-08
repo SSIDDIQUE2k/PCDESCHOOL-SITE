@@ -275,10 +275,12 @@ nav.scrolled {
     }
 }
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #0c1f51;
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 14px;
-    margin-top: 20rem;
 }
