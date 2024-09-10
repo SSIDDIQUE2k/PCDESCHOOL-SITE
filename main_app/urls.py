@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views # Import views to connect routes to view functions
 
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('login/', views.Login.as_view(), name='sign-in'),
@@ -26,9 +28,6 @@ urlpatterns = [
     path('spg_directories/electronics', views.Electronics, name='electronics'),
        path('spg_directories/trips', views.Trips, name='trips'),
        
-
-
-
- 
-    
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

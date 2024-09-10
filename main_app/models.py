@@ -5,12 +5,11 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Teacher(models.Model):
     name = models.CharField(max_length=100)
-    grade= models.IntegerField()
+    grade = models.IntegerField()
     description = models.TextField(max_length=250)
     subject = models.CharField(max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-
-
+    profile_image = models.ImageField(upload_to='teacher_profiles/', blank=True, null=True)  # New field for profile image
 
     # new code below
     def __str__(self):
@@ -18,7 +17,6 @@ class Teacher(models.Model):
 
     def get_absolute_url(self):
         return reverse('teacher-detail', kwargs={'teacher_id': self.id})
-    
 class Event(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField(blank=True)
