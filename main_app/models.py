@@ -19,4 +19,11 @@ class Teacher(models.Model):
     def get_absolute_url(self):
         return reverse('teacher-detail', kwargs={'teacher_id': self.id})
     
-    
+class Event(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.TextField(blank=True)
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField()
+
+    def __str__(self):
+        return self.title

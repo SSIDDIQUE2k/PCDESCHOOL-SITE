@@ -31,12 +31,12 @@
 <section class="announcement-calendar-section">
     <div class="announcements-section">
         <h2>Announcements</h2>
+        <h2>Events for {{ today|date:"F Y" }}</h2>
         <ul>
-            {% for announcement in announcements %}
-            <li>
-                <h3>{{ announcement.title }}</h3>
-                <p>{{ announcement.content }}</p>
-            </li>
+            {% for event in events %}
+                <li>{{ event.title }}: {{ event.start_time|date:"D, d M Y H:i" }} - {{ event.end_time|date:"H:i" }}</li>
+            {% empty %}
+                <li>No events for this month.</li>
             {% endfor %}
         </ul>
     </div>

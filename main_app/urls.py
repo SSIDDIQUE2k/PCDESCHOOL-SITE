@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views # Import views to connect routes to view functions
 
+
 urlpatterns = [
     path('login/', views.Login.as_view(), name='sign-in'),
     path('', views.home, name='home'),

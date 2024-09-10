@@ -7,7 +7,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 
-from .models import Teacher  # Import the Teacher model
+from django.utils import timezone
+from datetime import timedelta
+
+from .models import Teacher, Event # Import the Teacher model
 
 class Login(LoginView):
     template_name = 'login.html'
@@ -27,12 +30,14 @@ class TeacherDelete(DeleteView):
     model = Teacher
     success_url = '/teachers/'
 
-
-
-# Define the home view function
 def home(request):
-    # Send a simple HTML response
-    return render(request, 'home.html')
+    today = timezone.now()
+    start_date = today - timedelta(days=today.day-1)  # Start of the month
+    end_date = start_date + timedelta(days=31)  # End date for 31 days
+
+    events = Event.objects.filter(start_time__range=(start_date, end_date))
+
+    return render(request, 'home.html', {'events': events, 'today': today})
 
 def contact(request):
     return render(request, 'contact.html')
