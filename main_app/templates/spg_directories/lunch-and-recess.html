@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/spg/trips.css' %}" />
+
+<!-- Main header for the page -->
+<h1><strong>Lunch</strong></h1>
+
+<div class="content">
+    <p>
+        A nutritionally balanced hot lunch and milk are served daily for those children who do not bring a lunch from home. Students who meet income guidelines established by the federal government are eligible to participate in either a free or reduced cost lunch program. Application forms are available in the school's office. All information is kept confidential. Students who are not eligible for free lunch must include the fee with their tuition. Please note that glass bottles and soda are not allowed in the classroom.
+    </p>
+</div>
+<h1><strong>Recess</strong></h1>
+
+<div class="content">
+
+    <p>
+        People's DayCare And Elementary School students generally have at least one outdoor recess during the school day if the weather is favorable.
+    </p>
+    <p>
+        Students who are in school are expected to go outside at recess times. Special circumstances preventing students from doing so should be communicated to the director and/or principal in writing. A note from the doctor would be helpful.
+    </p>
+    
+</div>
+
+{% endblock %}

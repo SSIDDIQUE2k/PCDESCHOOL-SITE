@@ -107,6 +107,9 @@ def a_d_Procedures(request):
 def Health_Issues(request):
     return render(request, 'spg_directories/health-issues.html')
 
+def Legal(request):
+    return render(request, 'spg_directories/legal-custody-and-issues.html')
+
 def attire_requirement(request):
     return render(request, 'spg_directories/attire_requirement.html')
 
@@ -118,6 +121,18 @@ def Electronics(request):
 
 def Trips(request):
     return render(request, 'spg_directories/trips.html')
+
+def Library(request):
+    return render(request, 'spg_directories/library-center.html')
+
+def Lost_and_Found(request):
+    return render(request, 'spg_directories/lost-and-found.html')
+
+def Lunch_and_Recess(request):
+    return render(request, 'spg_directories/lunch-and-recess.html')
+
+def School_info(request):
+    return render(request, 'spg_directories/school-info.html')
 
 
 

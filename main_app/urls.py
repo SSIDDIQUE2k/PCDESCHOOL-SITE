@@ -23,10 +23,17 @@ urlpatterns = [
     path('academics_directories/attendance', views.attendance, name='attendance'),
     path('spg_directories/a-d_procedures', views.a_d_Procedures, name='a-d_procedures'),
     path('spg_directories/health-issues', views.Health_Issues, name='health-issues'),
+    path('spg_directories/legal-custody-and-issues', views.Legal, name='legal-issues'),
     path('spg_directories/attire_requirement', views.attire_requirement, name='attire_requirement'),
     path('spg_directories/gym', views.Gym, name='gym'),
     path('spg_directories/electronics', views.Electronics, name='electronics'),
-       path('spg_directories/trips', views.Trips, name='trips'),
+    path('spg_directories/trips', views.Trips, name='trips'),
+    path('spg_directories/library-center', views.Library, name='library-center'),
+    path('spg_directories/lost-and-found', views.Lost_and_Found, name='lost-and-found'),
+    path('spg_directories/lunch-and-recess', views.Lunch_and_Recess, name='lunch-and-recess'),
+    path('spg_directories/school-info', views.School_info, name='school-info'),
+
+
        
 ]
 if settings.DEBUG:

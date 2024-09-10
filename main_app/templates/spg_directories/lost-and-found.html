@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/spg/trips.css' %}" />
+
+<!-- Main header for the page -->
+<h1><strong>Lost And Found</strong></h1>
+
+<div class="content">
+    <p>
+        Please make sure that all of your child's belongings are labeled. Children can check the Lost and Found with their teacher's permission whenever an item is missing. Please feel free to check the Lost and Found when you are in the building or after school. Be aware that during vacations, unclaimed items in the Lost and Found area will be cleared out, so be sure to check for items prior to these times.
+    </p>
+</div>
+
+{% endblock %}

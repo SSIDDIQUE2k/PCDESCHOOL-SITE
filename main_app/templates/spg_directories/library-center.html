@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Load static files to access CSS files -->
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/spg/trips.css' %}" />
+
+<!-- Main header for the page -->
+<h1><strong>Library Center</strong></h1>
+
+<div class="content">
+    <p>
+        The Library Center is central to our life at Julia Nicholson Leadership Academy. The library is designed to meet the needs of all students and staff. Materials are selected to complement and enhance the school's curriculum. In addition, there are a wide variety of fiction and non-fiction books to enhance students understanding of the world they live in. The library subscribes to a flexible schedule model, with services available to all students all day. Classroom teachers are free to bring their students for whole class instruction or to send groups of children for individual assistance.
+    </p>
+    <p>
+        Books are checked out by students for one week. Children are encouraged to use good sense in keeping books in a safe place. However, if a book is lost or damaged, parents are notified, and the expectation is that the child will pay for its replacement.
+    </p>
+</div>
+
+{% endblock %}
